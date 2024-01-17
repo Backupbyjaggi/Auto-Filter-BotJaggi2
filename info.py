@@ -58,14 +58,6 @@ if len(LOG_CHANNEL) == 0:
 else:
     LOG_CHANNEL = int(LOG_CHANNEL)
 
-# support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', 'https://t.me/Jaggi_movies')
-if len(SUPPORT_GROUP) == 0:
-    print('Error - SUPPORT_GROUP is missing, exiting now')
-    exit()
-else:
-    SUPPORT_GROUP = int(SUPPORT_GROUP)
-
 # for chatGPT
 OPENAI_API = environ.get('OPENAI_API', '')
 if len(OPENAI_API) == 0:
